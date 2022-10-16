@@ -1,9 +1,11 @@
+/* @import url('../assets/wel8ibk.css'); */
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   /* outline: 1px solid red; */
-  font-family: 'Proxima Nova';
+  /* font-family: 'Proxima Nova'; */
+  font-family: "proxima-nova",sans-serif;
 }
 
 *, *::after, *::before {
