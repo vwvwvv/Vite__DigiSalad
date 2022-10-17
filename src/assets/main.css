@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
   /* font-family: 'Proxima Nova'; */
   font-family: "proxima-nova",sans-serif;
 }
@@ -21,4 +21,38 @@
 .container {
   max-width: 1440px;
   margin: auto;
+}
+
+.title {
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 3.6px;
+  color: #262626;
+  margin-top: 125px;
+  margin-bottom: 75px;
+  position: relative; 
+  z-index: 1;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  right: -22px;
+  background-color:#EE6C8A;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.title:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  right: -5px;
+  background-color:#26C6D0;
+  display: inline-block;
+  height: 10px;
+  z-index: -1;
 }

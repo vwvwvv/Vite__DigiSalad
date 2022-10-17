@@ -5,7 +5,7 @@ import Section02 from '@/components/Section02.vue'
 </script>
 
 <template>
-  <PartNavBar class="partnavbar"></PartNavBar>
+  <!-- <PartNavBar class="partnavbar"></PartNavBar> -->
   <Section01></Section01>
   <Section02></Section02>
 </template>
