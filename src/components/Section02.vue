@@ -11,10 +11,38 @@
         </div>
       </div>
       <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.</p>
-      <a href="#"><span>VIEW MORE</span><span class="line"></span></a>
-      <!-- <div class="btn"><a href="#">VIEW MORE<span class="line"></span></a></div> -->
+      <a href="#" class="btn"><span>VIEW MORE</span><span class="btn-line"></span></a>
+
+    </div>
+
+    <div class="awards">
+      <div class="container">
+        <div class="text">
+          <h2 class="title">AWARDS</h2>
+          <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc.</p>
+        </div>
+        <div class="pic">
+          <div class="row">
+            <div class="col">
+              <img src="../assets/image5.png">
+            </div>
+            <div class="col">
+              <img src="../assets/image5.png">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img src="../assets/image5.png">
+            </div>
+            <div class="col">
+              <img src="../assets/image5.png">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
 </template>
 
 <style scoped>
@@ -22,12 +50,14 @@
   width: 100%;
   /* height: 100vh; */
   background-color:#E5E5E5;
+  position: relative;
 }
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
+  padding-bottom: 216px;
 }
 .video-container {
   max-width: 960px;
@@ -51,79 +81,59 @@
   height: 100%;
 }
 
-p {
-  width: 960px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  letter-spacing: 1px;
-}
-
-a {
+.btn {
   width: 223px;
   height: 86px;
-  border-radius: 1px;
-  background-color: #26C6D0;
-  text-decoration: none;
-  margin: 70px;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #ffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.line {
-  display: block;
-  width: 52px;
-  height: 2px;
+
+
+
+.awards {
   background-color: #ffff;
-  margin-left: 15px;
-}
-
-/* a::after {
-  content: '';
+  border-radius: 50px 0 50px 50px;
+  /* width: 100%; */
+ width: 1346px;
+  height: 432px;
   position: absolute;
-  width: 52px;
-  height: 2px;
-  background-color: #ffff;
-  top: 50%;
+  bottom: -216px;
   right: 0;
-} */
-
-/* 
-.btn {
-    display: block;
-    width: 223px;
-    height: 86px;
-    border-radius: 1px;
-    background-color: #26C6D0;
-  }
-
-a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #ffff;
+  z-index: 1;
 }
 
-a::after {
-  content: '';
-  position: absolute;
-  width: 50px;
-  height: 2px;
-  background-color: #ffff;
-} */
+.awards .container {
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-/* .line {
-  width: 50px;
-  height: 2px;
-  background-color: #ffff;
-  display: ;
-} */
+.awards .text {
+  width: 50%;
+}
+
+.awards h2 {
+  display: inline-block;
+}
+
+.awards p {
+  width: 80%;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: #262626;
+}
+
+.awards .pic {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.awards .row {
+  display: flex;
+  justify-content: space-around;
+}
+
 
 </style>

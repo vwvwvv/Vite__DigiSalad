@@ -15,7 +15,7 @@
 #app {
   width: 100%;
   height: 100vh;
-  background-color:#E5E5E5;;
+  background-color:#E5E5E5;
 }
 
 .container {
@@ -48,11 +48,53 @@
 .title:before {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -14PX;
   left: -5px;
   right: -5px;
-  background-color:#26C6D0;
+  /* background-color:#26C6D0; */
+  background-image: url(./wave.png);
+  /* background-position: 20%; */
+  background-repeat: repeat-x;
+  background-size: contain;
   display: inline-block;
-  height: 10px;
+  height: 12px;
   z-index: -1;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+p {
+  width: 960px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
+.btn {
+  background-color: #26C6D0;
+  border-radius: 1px;
+  text-decoration: none;
+  margin: 70px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-line {
+  display: block;
+  width: 52px;
+  height: 2px;
+  background-color: #ffff;
+  margin-left: 15px;
 }
