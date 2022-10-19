@@ -19,13 +19,33 @@ import CardIngradients from './CardIngradients.vue'
         <a href="#" class="more-btn">VIEW MORE DIGISALAD’S INGRADIENTS</a>
       </div>
     </div>
+
+    <div class="about">
+      <div class="container">
+        <div class="character">
+          <div class="avatar">
+            <img src="../assets/TST1914.jpg" alt="avatar">
+          </div>
+          <h4 class="name">Tony Ng</h4>
+          <div class="position">Founder & Creative Director</div>
+        </div>
+        <div class="text">
+          <div class="icon">
+            <img src="../assets/left-quote.png" alt="quote">
+          </div>
+          <p>
+            A great digital work isn’t about designing beautiful pages purely. It is about context - how do we deliver the <span>right experience to the right person at the right time.</span>The most important thing is that your work can engage customers at anytime, anywhere and let users experience an entire amazing digital journey.
+          </p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </template>
 
 <style scoped>
 .section-03 {
   width: 100%;
-  /* height: 100vh; */
   background-color:#26C6D0;
   border-radius: 50px 50px 0 0 ;
   position: relative;
@@ -94,6 +114,100 @@ import CardIngradients from './CardIngradients.vue'
   height: 10px;
   background-color:#FFBC58;
   z-index: -1;
+}
+
+.about {
+  background-color: #ffff;
+  border-radius: 0 50px 50px 50px;
+  min-width: 1280px;
+  height: 598px;
+  position: absolute;
+  bottom: -299px;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+
+  background-image: url(../assets/shutterstock_675737842.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  /* margin-left: 25%; */
+  /* padding-left: 299px; */
+  /* padding-left: 75px; */
+  /* padding-top: 299px; */
+}
+
+.about .character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+}
+
+
+
+.about .avatar {
+  width: 204px;
+  height: 204px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15%;
+}
+
+.about .name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.about .position {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  padding-top: 3%;
+}
+.about .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .icon {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.about p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: left;
+  max-width: 800px;
+}
+
+.about p span {
+  color: #FFBC58;
 }
 
 </style>

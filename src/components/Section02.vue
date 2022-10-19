@@ -59,6 +59,7 @@
   margin: auto;
   padding-bottom: 216px;
 }
+
 p {
   max-width: 960px;
 }
@@ -88,8 +89,6 @@ p {
   width: 223px;
   height: 86px;
 }
-
-
 
 .awards {
   background-color: #ffff;
