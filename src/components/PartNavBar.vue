@@ -50,18 +50,19 @@ onMounted(() => {
           </a>
         </h1>
         <div class="container">
-          <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-          </div>
-          <div class="row">
-            <div class="col">about us</div>
-            <div class="col">WORKS</div>
-          </div>
-          <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-          </div>
+            <div class="row">
+              <div class="col"></div>
+              <div class="col"></div>
+            </div>
+            <div class="row">
+              <div class="col">about us</div>
+              <div class="col">WORKS</div>
+            </div>
+            <div class="row">
+              <div class="col"></div>
+              <div class="col"></div>
+            </div>
+
         </div>
       </div>
   </div>
@@ -162,7 +163,9 @@ onMounted(() => {
   right: 0;
   width: 80%;
 }
-
+/* ------------------------ */
+/* 漢堡選單.open */
+/* ------------------------ */
 .open .hamburger-line { display: none;}
 
 .open.hamburger::before,
@@ -214,11 +217,11 @@ onMounted(() => {
   top: 22px;
 }
 .overlays .container {
-padding-top: 100px;
-padding-bottom: 100px;
-display: flex;
-justify-content: space-around;
-align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .row {
@@ -279,4 +282,5 @@ align-items: center;
 .row:nth-child(3) .col:last-child {
   background-color: #585880;
 }
+
 </style>

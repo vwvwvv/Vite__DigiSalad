@@ -23,7 +23,7 @@
 .section-01 {
   width: 100%;
   height: 100vh;
-
+  max-height: 900px;
   background-image: url(@/assets/BG.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -32,6 +32,7 @@
 }
 .container {
   position: relative;
+  max-width: 1440px;
 }
 .digital-agency  {
   display: flex;

@@ -59,6 +59,9 @@
   margin: auto;
   padding-bottom: 216px;
 }
+p {
+  max-width: 960px;
+}
 .video-container {
   max-width: 960px;
   margin: auto;
@@ -88,44 +91,54 @@
 
 
 
-
 .awards {
   background-color: #ffff;
   border-radius: 50px 0 50px 50px;
   /* width: 100%; */
- width: 1346px;
+  width: 1280px;
   height: 432px;
   position: absolute;
   bottom: -216px;
   right: 0;
   z-index: 1;
+  display: flex;
+  align-items: center;
 }
 
 .awards .container {
+
   flex-direction: row;
-  justify-content: space-between;
+  width:100%;
+  height: 100%;
+  padding-left: 75px;
+  padding-right: 230px;
+  padding-top: 216px;
 }
+
 
 .awards .text {
   width: 50%;
+  margin-right: 50px;
 }
-
-.awards h2 {
-  display: inline-block;
-}
-
 .awards p {
-  width: 80%;
   text-align: left;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 1px;
   color: #262626;
+  margin-top: 50px;
 }
 
+.awards .title {
+  display: inline-block;
+  margin: 0;
+}
+
+
+
 .awards .pic {
-  width: 50%;
+  width: 80%;
   display: flex;
   flex-direction: column;
 }
