@@ -120,7 +120,7 @@ import CardIngradients from './CardIngradients.vue'
 .about {
   background-color: #ffff;
   border-radius: 0 50px 50px 50px;
-  min-width: 1280px;
+  max-width: 1280px;
   height: 598px;
   position: absolute;
   bottom: -299px;

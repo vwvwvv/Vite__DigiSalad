@@ -52,16 +52,45 @@ onMounted(() => {
         
         <div class="container">
             <div class="row">
-              <div class="col"></div>
-              <div class="col"></div>
+              <div class="col about-us">
+                <div class="wrap">
+                  <div class="pic">
+                  <img src="../assets/CardIngradients/ingradient_01.png" alt="about-us">
+                  </div>
+                  <div class="text">
+                    <h6>EMPOWERING BRANDS</h6>
+                    <h1 class="heading">ABOUT US</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col works">
+                <div class="wrap">
+                  <div class="pic">
+                  <img src="../assets/CardIngradients/ingradient_02.png" alt="about-us">
+                  </div>
+                  <div class="text">
+                    <h6>CASE STUDIES</h6>
+                    <h1 class="heading">WORKS</h1>
+                  </div>
+                </div>
+              </div>
             </div>
+
             <div class="row">
-              <div class="col">about us</div>
-              <div class="col">WORKS</div>
+              <div class="col careers"></div>
+              <div class="col insights"></div>
             </div>
+
             <div class="row">
-              <div class="col"></div>
-              <div class="col"></div>
+              <div class="col contact">
+                <div class="wrap">
+                  <div class="text">
+                    <h6>START YOUR JOURNEY WITH US</h6>
+                    <h1 class="heading">CONTACT</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="col services"></div>
             </div>
 
         </div>
@@ -104,6 +133,7 @@ onMounted(() => {
   justify-content: space-between;
   align-items: center;
 }
+
 #part-navbar button {
   width: 200px;
   height: 40px;
@@ -166,6 +196,7 @@ onMounted(() => {
   right: 0;
   width: 80%;
 }
+
 /* ------------------------ */
 /* 漢堡選單.open */
 /* ------------------------ */
@@ -209,7 +240,7 @@ onMounted(() => {
   /* border-radius: 0 0 50px 50px; */
 }
 .overlays.open {
-  height: 100vh;
+  /* height: 100vh; */
   overflow-y: hidden;
 }
 
@@ -224,67 +255,177 @@ onMounted(() => {
   padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
 .row {
   display: flex;
   flex-direction: column;
-
+  align-items: center;
+  width: 32%;
 }
+
 .col {
   border-radius: 30px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  margin: 5%;
+  position: relative;
 }
 
 .row:nth-child(2) {
+  width: 25%;
   justify-content: space-between;
 }
 
 .row:nth-child(3) {
   flex-direction: column-reverse;
 }
-
+.wrap {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  /* top: 0;
+  bottom: 0; */
+  inset: 0;
+  outline: 1px solid blue;
+  z-index: 20;
+  padding: 50px 25px;
+}
 .col:first-child {
-  /* width: 380px;
-  height: 210px; */
+  /* max-width: 380px; */
+  /* height: 210px; */
+  /* width: 29%; */
   padding-bottom: 55%;
+  width: 100%;
+  align-items: center;
 }
 
 .col:last-child {
-  /* width: 380px;
-  height: 320px; */
+  /* max-width: 380px; */
+  /* width: 29%; */
+  /* height: 320px; */
   padding-bottom: 84%;
+  width: 100%;
 }
 
-.row:nth-child(1) .col:first-child {
-  background-color: #26C6D0;
+.about-us {
+  /* background-color: #26C6D0; */
+  background-color: rgba(38, 198, 208, 0.9);
+  background-blend-mode: multiply;
+  background-image: url(../assets/menu01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.row:nth-child(1) .col:last-child {
+.works {
+  /* background-color: #EE6C8A; */
+  background-color: rgba(238, 108, 138, 0.9);
+  background-blend-mode: multiply;
+  background-image: url(../assets/menu02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.works .wrap {
+  align-items: flex-end;
+}
+
+.row:nth-child(2) .careers {
+  /* width: 290px; */
+  /* width: 44%; */
+  /* height: 430px; */
+  padding-bottom: 148%;
+  width: 100%;
+
+  background-color: rgba(230, 169, 78, 0.9);
+  background-blend-mode: multiply;
+  background-image: url(../assets/menu03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row:nth-child(2) .insights {
+  /* width: 44%; */
+  /* width: 290px; */
+  /* height: 282px; */
+  /* background-color: #26D0A8; */
+  padding-bottom: 97%;
+  width: 100%;
+  background-color: rgba(38, 208, 168, 0.9);
+  background-blend-mode: multiply;
+  background-image: url(../assets/menu04.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.services {
+  /* background-color: #585880; */
+  background-color: rgba(88, 88, 128, 0.9);
+  background-blend-mode: multiply;
+  background-image: url(../assets/menu05.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact {
+  background-color: rgba(255,255,255,0.9);
+} 
+.pic {
+  /* width: 15%; */
+  /* padding: 20px; */
+  padding-right: 20px;
+}
+
+.heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 3.5px;
+  color: #FFFFFF;
+  position: relative;
+  display: inline-block;
+}
+
+.heading::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
   background-color: #EE6C8A;
+  bottom: 5px;
+  right: -20px;
 }
 
-.row:nth-child(2) .col:first-child {
-  width: 290px;
-  height: 430px;
-  background-color: #E6A94E;
+.works .heading::after {
+  background-color: #26C6D0;
+} 
+
+h6 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1.8px;
+  color: #FFFFFF;
+  padding-bottom: 10px;
 }
 
-.row:nth-child(2) .col:last-child {
-  width: 290px;
-  height: 282px;
-  background-color: #26D0A8;
+.contact .heading {
+  color: #26C6D0;
 }
 
-.row:nth-child(3) .col:first-child {
-
-  background-color: #FFFFFF;
+.contact h6 {
+  color: #262626;
 }
-
-.row:nth-child(3) .col:last-child {
-  background-color: #585880;
-}
-
 </style>
