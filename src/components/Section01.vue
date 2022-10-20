@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="section-01">
+  <div id="section-01">
     <div class="container">
       <div class="digital-agency">
         <div class="line"></div>
@@ -14,16 +14,25 @@
         </h1>
         <h2>WE CREATE<br/>AMAZING<br/><span class="f">DIGITAL EXPERIENCES</span></h2>
       </div>
+
     </div>
+    <div class="taste">
+      <div class="pic">
+        <img src="../assets/te.png" alt="taste">
+      </div>
+      <h6>TASTE US NOW!</h6>
+      <div class="indicator-line"></div>
+    </div>
+
 
   </div>
 </template>
 
 <style scoped>
-.section-01 {
+#section-01 {
   width: 100%;
-  height: 100vh;
-  max-height: 900px;
+  height: 100%;
+  /* max-height: 900px; */
   background-image: url(@/assets/BG.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -60,7 +69,7 @@
 }
 
 
-.section-01 .content {
+#section-01 .content {
   position: absolute;
   top: 181px;
   left: 220px;
@@ -68,12 +77,12 @@
   z-index: 1;
 }
 
-.section-01 .logo {
+#section-01 .logo {
   width: 200px;
   margin-bottom: 5%;
 }
 
-.section-01 h2 {
+#section-01 h2 {
   font-weight: 700;
   font-size: 38px;
   color: #fff;
@@ -104,4 +113,40 @@
   border-radius: 50%;
   z-index: -1;
 }
+.taste {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+.taste .pic {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.taste h6 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.taste .indicator-line {
+  width: 1px;
+  height: 50px;
+  background-color: #fff;
+}
+
 </style>

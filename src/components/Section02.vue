@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="section-02">
+  <div id="section-02">
     <div class="container">
       <h2 class="title">ABOUT DIGISALAD</h2>
       <div class="video-container">
@@ -41,12 +41,21 @@
         </div>
       </div>
     </div>
+
+    <div class="taste">
+      <!-- <div class="pic">
+        <img src="../assets/te.png" alt="taste">
+      </div>
+      <h6>TASTE US NOW!</h6> -->
+      <div class="indicator-line"></div>
+    </div>
   </div>
 
 </template>
 
 <style scoped>
-.section-02 {
+
+#section-02 {
   width: 100%;
   /* height: 100vh; */
   background-color:#E5E5E5;
@@ -147,5 +156,40 @@ p {
   justify-content: space-around;
 }
 
+.taste {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
 
+}
+/* .taste .pic {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  overflow: hidden;
+} */
+
+/* .taste h6 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 50px;
+} */
+
+.taste .indicator-line {
+  width: 2px;
+  height: 80px;
+  background-color: #808080;
+}
 </style>

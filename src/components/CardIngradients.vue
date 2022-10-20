@@ -66,9 +66,6 @@ const cards = reactive([
   margin-right: 20px;
 }
 
-#card-ingradient:not(:last-child) {
-  /* margin-right: 20px; */
-}
 
 .pic {
   border-radius: 50%;

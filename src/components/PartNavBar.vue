@@ -21,7 +21,7 @@ onMounted(() => {
   })
 
   window.addEventListener('scroll', function() {
-    const partNavbar = document.querySelector('.part-navbar')
+    const partNavbar = document.querySelector('#part-navbar')
     partNavbar.classList.toggle('stick', window.scrollY > 0)
   })
 })
@@ -30,7 +30,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="part-navbar">
+  <div id="part-navbar">
     <h1 class="logo">
       <a href="#">
         <img src="../assets/logoO.png" alt="logo">
@@ -49,6 +49,7 @@ onMounted(() => {
             <img src="../assets/logoW.png" alt="logo">
           </a>
         </h1>
+        
         <div class="container">
             <div class="row">
               <div class="col"></div>
@@ -69,7 +70,8 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.part-navbar {
+
+#part-navbar {
   width: 100%;
   height: 100px;
   background-color: transparent;
@@ -78,30 +80,31 @@ onMounted(() => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: fixed;
+  z-index: 9999;
   transition: 0.5s;
 }
 
-.part-navbar.stick {
+#part-navbar.stick {
   background-color:rgba(255,255,255,1);
 }
 
-.part-navbar .logo {
+#part-navbar .logo {
   /* width: 120px; */
   height: 54px;
   opacity: 0;
 }
 
-.part-navbar.stick .logo {
+#part-navbar.stick .logo {
   opacity: 1;
 }
 
-.part-navbar .menu {
+#part-navbar .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.part-navbar button {
+#part-navbar button {
   width: 200px;
   height: 40px;
   border-radius: 24px;
@@ -141,9 +144,9 @@ onMounted(() => {
   transition: 0.2s;
 }
 
-.part-navbar.stick .hamburger-line,
-.part-navbar.stick .hamburger::before,
-.part-navbar.stick .hamburger::after {
+#part-navbar.stick .hamburger-line,
+#part-navbar.stick .hamburger::before,
+#part-navbar.stick .hamburger::after {
   background-color:#414042;
 }
 
@@ -192,7 +195,8 @@ onMounted(() => {
   top: 0;
   left: 0;
   width: 100%;
-  height: 0;
+  /* height: 0; */
+  height: 100vh;
   overflow: hidden;
   z-index: 1;
   /* background: linear-gradient(180deg, #585880 3.61%, #26C6D0 95.7%); */
@@ -243,15 +247,15 @@ onMounted(() => {
 }
 
 .col:first-child {
-  width: 380px;
-  height: 210px;
-  
+  /* width: 380px;
+  height: 210px; */
+  padding-bottom: 55%;
 }
 
 .col:last-child {
-  width: 380px;
-  height: 320px;
-  
+  /* width: 380px;
+  height: 320px; */
+  padding-bottom: 84%;
 }
 
 .row:nth-child(1) .col:first-child {

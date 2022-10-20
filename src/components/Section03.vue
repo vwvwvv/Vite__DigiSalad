@@ -3,7 +3,7 @@ import CardIngradients from './CardIngradients.vue'
 </script>
 
 <template>
-  <div class="section-03">
+  <div id="section-03">
     <div class="container">
       <div class="info">
         <h2 class="title">OUR INGRADIENTS</h2>
@@ -44,14 +44,15 @@ import CardIngradients from './CardIngradients.vue'
 </template>
 
 <style scoped>
-.section-03 {
+
+#section-03 {
   width: 100%;
   background-color:#26C6D0;
   border-radius: 50px 50px 0 0 ;
   position: relative;
   padding-bottom: 433px;
 }
-.section-03::before {
+#section-03::before {
   content: '';
   position: absolute;
   inset: 0;
