@@ -123,14 +123,22 @@
   align-items: center;
   z-index: 1;
   cursor: pointer;
+
 }
+
 .taste .pic {
   width: 65px;
   height: 65px;
   border-radius: 50%;
   overflow: hidden;
-}
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  transform: scale(1);
+  transition: 0.5s;
 
+}
+.taste:hover .pic {
+  transform: scale(1.1);
+}
 .taste h6 {
   font-style: normal;
   font-weight: 700;
