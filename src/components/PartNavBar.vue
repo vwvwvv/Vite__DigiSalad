@@ -152,6 +152,7 @@ onMounted(() => {
 
 #part-navbar.stick {
   background-color:rgba(255,255,255,1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 #part-navbar .logo {
@@ -183,8 +184,13 @@ onMounted(() => {
   letter-spacing: 1.2px;
   color: #FFFFFF;
   cursor: pointer;
+  transition: background 1s;
 }
+#part-navbar button:hover {
+    background:linear-gradient(45deg, #26D0A8 3.94%, #4EE5EA 94.73%);
+    box-shadow: 0 0 3px rgba(14, 86, 69, 0.6);
 
+}
 /* ------------------------ */
 /* 漢堡選單 */
 /* ------------------------ */
@@ -268,19 +274,21 @@ onMounted(() => {
   /* background: linear-gradient(180deg, #585880 3.61%, #26C6D0 95.7%); */
   /* background: linear-gradient(180deg, rgba(88, 88, 128, 0.5) 3.61%, rgba(38, 198, 208, 0.5) 95.7%); */
   background: linear-gradient(180deg, rgba(88, 88, 128, 0.5) 3.61%, rgba(38, 198, 208, 0.5) 95.7%), url(@/assets/BG.jpg);
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 .overlays.open {
   height: 100vh;
   overflow-y: hidden;
+  opacity: 1;
 }
 
 .logo2 {
   position: absolute;
-  height: 54px;
+  height: 55px;
   opacity: 1;
   padding-left: 60px;
   top: 22px;

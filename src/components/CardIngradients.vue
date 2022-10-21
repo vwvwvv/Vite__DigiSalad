@@ -61,7 +61,7 @@ const cards = reactive([
   /* justify-content: space-between; */
   align-items: center;
   width: 25%;
-  margin-bottom: 50px;
+  margin-bottom: 65px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -97,14 +97,15 @@ h4 {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
-  margin: 6%;
+  margin: 10%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 150px;
+  max-width: 250px;
   height: 30px;
 }
+
 p {
   color: #fff;
   width: auto;
@@ -124,6 +125,11 @@ p {
   line-height: 17px;
   letter-spacing: 2px;
   margin: 6%;
+  transition: 0.5s;
+}
+
+.text a:hover {
+  box-shadow: inset 0 0 6px 2px rgba(255, 255, 255, 0.8);
 }
 
 </style>

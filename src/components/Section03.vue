@@ -115,8 +115,12 @@ import CardIngradients from './CardIngradients.vue'
   height: 10px;
   background-color:#FFBC58;
   z-index: -1;
+  transition: 0.5s;
 }
 
+.more-btn:hover::after {
+  background-color:#d6993e;
+}
 .about {
   background-color: #ffff;
   border-radius: 0 50px 50px 50px;

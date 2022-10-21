@@ -80,5 +80,16 @@ const BrandLogos = reactive([
     padding: 25px;
 }
 
+@media (max-width: 992px) {
+  .brand-logo {
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-logo {
+    width: 45%;
+  }
+}
 
 </style>
