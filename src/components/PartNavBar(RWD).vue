@@ -263,6 +263,7 @@ onMounted(() => {
   left: 0;
   width: 100%;
   height: 0;
+  /* height: 100vh; */
   overflow: hidden;
   z-index: 1;
   /* background: linear-gradient(180deg, #585880 3.61%, #26C6D0 95.7%); */
@@ -312,8 +313,6 @@ onMounted(() => {
   margin: 5%;
   position: relative;
 }
-
-
 
 .row:nth-child(2) {
   width: 25%;
@@ -622,4 +621,5 @@ h6 {
   }
 
 }
+
 </style>
